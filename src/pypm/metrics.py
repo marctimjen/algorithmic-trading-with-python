@@ -1,6 +1,8 @@
+import sys
+sys.path.append("../..") # adds higher directory to python modules path
 import numpy as np
 import pandas as pd
-from pypm.data_io import load_eod_data, load_spy_data
+from .data_io import load_eod_data, load_spy_data
 from sklearn.linear_model import LinearRegression
 from typing import Dict, Any, Callable
 
