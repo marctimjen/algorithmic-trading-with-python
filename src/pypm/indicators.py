@@ -1,5 +1,5 @@
 import pandas as pd
-from pypm.data_io import load_eod_data
+from .data_io import load_eod_data
 
 
 def calculate_simple_moving_average(series: pd.Series, n: int=20) -> pd.Series:
