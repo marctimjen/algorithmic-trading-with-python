@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-from pypm.indicators import calculate_macd_oscillator, \
+from .indicators import calculate_macd_oscillator, \
     calculate_bollinger_bands
-from pypm.data_io import load_eod_data
+from .data_io import load_eod_data
 
 
 def create_macd_signal(series: pd.Series, n1: int=5, n2: int=34) -> pd.Series:
