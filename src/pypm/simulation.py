@@ -2,9 +2,11 @@ from typing import Tuple, List, Dict, Callable, NewType, Any, Iterable
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
+sys.path.append("../..") # adds higher directory to python modules path
 
-from pypm import metrics, signals, data_io
-from pypm.portfolio import PortfolioHistory, Position, Symbol, Dollars
+from src.pypm import metrics, signals, data_io
+from .portfolio import PortfolioHistory, Position, Symbol, Dollars
 
 from collections import OrderedDict, defaultdict
 
