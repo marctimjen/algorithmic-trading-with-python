@@ -57,6 +57,7 @@ def simulate_portfolio(boil_n: int = 20, sha_n: int = 20, max_pos: int = 5):
     return simulator
 
 if __name__ == '__main__':
+    pass
     # ja = []
     # ls = []
     # for i in range(5, 500 + 1, 5):
