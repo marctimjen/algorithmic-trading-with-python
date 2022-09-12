@@ -1,6 +1,8 @@
 import pandas as pd
-from pypm import data_io
-from pypm.portfolio import Position, PortfolioHistory
+import sys
+sys.path.append("../..") # adds higher directory to python modules path
+from src.pypm import data_io, portfolio
+from src.pypm.portfolio import Position, PortfolioHistory
 
 symbol = 'AWU'
 df = data_io.load_eod_data(symbol)

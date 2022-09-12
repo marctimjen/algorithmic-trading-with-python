@@ -1,4 +1,6 @@
-from pypm import metrics, signals, data_io, simulation
+import sys
+sys.path.append("../..") # adds higher directory to python modules path
+from ..pypm import metrics, signals, data_io, simulation
 
 import pandas as pd
 import numpy as np

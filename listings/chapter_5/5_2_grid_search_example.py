@@ -1,7 +1,10 @@
 import pandas as pd
 
-from pypm import metrics, signals, data_io, simulation, optimization
-from pypm.optimization import GridSearchOptimizer
+import sys
+sys.path.append("../..") # adds higher directory to python modules path
+
+from src.pypm import metrics, signals, data_io, simulation, optimization
+from src.pypm.optimization import GridSearchOptimizer
 
 from typing import List, Dict, Tuple, Callable
 

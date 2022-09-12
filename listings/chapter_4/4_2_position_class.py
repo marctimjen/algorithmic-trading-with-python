@@ -4,7 +4,10 @@ import matplotlib.pyplot as plt
 from typing import Tuple, List, Dict, Callable, NewType, Any
 from collections import OrderedDict, defaultdict
 
-from pypm import metrics, signals, data_io
+import sys
+sys.path.append("../..") # adds higher directory to python modules path
+
+from src.pypm import metrics, signals, data_io
 
 Symbol = NewType('Symbol', str)
 Dollars = NewType('Dollars', float)
